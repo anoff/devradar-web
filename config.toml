@@ -1,6 +1,6 @@
-baseURL = "https://kross.netlify.com"
+baseURL = "http://localhost:1313"
 languageCode = "en-us"
-title = "Kross | Hugo Portfolio Template"
+title = "devradar | your personal techradar"
 theme = "kross-techradar"
 summaryLength = "10"
 
@@ -31,16 +31,16 @@ summaryLength = "10"
 [menu]
     
   [[menu.main]]
-  name = "About"
-  URL = "about"
+  name = "Code"
+  URL = "github"
   weight = 2
 
 [params]
-logo = "images/logo.png"
+logo = "images/devradar-b.png"
 home = "Home"
 # Meta data
-description = "This is meta description"
-author = "Themefisher"
+description = "Your personal techradar"
+author = "Andreas Offenhaeuser"
 # Google Analitycs
 googleAnalitycsID = "Your ID"
 
@@ -49,7 +49,7 @@ googleAnalitycsID = "Your ID"
   enable = true
 
   [params.contact]
-  enable = true
+  enable = false
   formAction = "#" #contact form works with formspree.io
 
   [params.footer]

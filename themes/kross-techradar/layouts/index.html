@@ -5,37 +5,47 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-11 mx-auto">
-          <h1 class="text-white font-tertiary">{{ .Site.Data.homepage.banner.title | safeHTML }}</h1>
+          <h1 class="text-dark font-tertiary">{{ .Site.Data.homepage.banner.title | safeHTML }}</h1>
         </div>
       </div>
     </div>
     <div class="layer-bg w-100">
       <img class="img-fluid w-100" src="{{`images/illustrations/overlay-top.png` | relURL}}" alt="bg-shape">
     </div>
+    <div id="radar-trans">
+        <img class="img-fluid" src="{{`images/illustrations/radar-transparent.png` | relURL}}" alt="bg-shape">
+      </div>
+    <div class="layer" id="l1">
+      <img src="{{`images/illustrations/blip-cogs.png` | relURL}}" alt="radar blip">
+    </div>
     <div class="layer" id="l2">
-      <img src="{{`images/illustrations/cognet-purple.png` | relURL}}" alt="bg-shape">
+      <img src="{{`images/illustrations/blip-cogs.png` | relURL}}" alt="radar blip">
     </div>
     <div class="layer" id="l3">
+      <img src="{{`images/illustrations/blip-cogs.png` | relURL}}" alt="radar blip">
     </div>
     <div class="layer" id="l4">
-        <img src="{{`images/illustrations/logo-l-w.png` | relURL}}" alt="bg-shape">
+        <img src="{{`images/illustrations/blip-wrench.png` | relURL}}" alt="radar blip">
     </div>
     <div class="layer" id="l5">
+        <img src="{{`images/illustrations/blip-wrench.png` | relURL}}" alt="radar blip">
     </div>
     <div class="layer" id="l6">
+        <img src="{{`images/illustrations/blip-wrench.png` | relURL}}" alt="radar blip">
     </div>
     <div class="layer" id="l7">
-      <img src="{{`images/illustrations/wrench-orange.png` | relURL}}" alt="bg-shape">
+      <img src="{{`images/illustrations/blip-net.png` | relURL}}" alt="radar blip">
     </div>
     <div class="layer" id="l8">
+      <img src="{{`images/illustrations/blip-net.png` | relURL}}" alt="radar blip">
     </div>
     <div class="layer" id="l9">
-      <img src="{{`images/illustrations/cogs-black.png` | relURL}}" alt="bg-shape">
+        <img src="{{`images/illustrations/blip-net.png` | relURL}}" alt="radar blip">
     </div>
     <!-- social icon -->
     <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
       {{ range .Site.Data.homepage.banner.socialLinks }}
-      <li class="mb-3"><a class="text-white" href="{{.URL}}"><i class="{{.icon}}"></i></a></li>
+      <li class="mb-3"><a class="text-dark" href="{{.URL}}"><i class="{{.icon}}"></i></a></li>
       {{ end }}
     </ul>
     <!-- /social icon -->
@@ -59,28 +69,6 @@
     </div>
   </section>
   <!-- /about -->
-  {{ end }}
-
-  {{ if .Site.Data.homepage.experience.enable }}
-  <!-- experience -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-around">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title">Experience</h2>
-        </div>
-        {{ range .Site.Data.homepage.experience.item }}
-        <div class="col-lg-3 col-md-4 text-center">
-          <img src="{{.logo}}" alt="icon">
-          <p class="mb-0">{{.duration}}</p>
-          <h4>{{.title }}</h4>
-          <h6 class="text-light">{{.company }}</h6>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  <!-- ./experience -->
   {{ end }}
 
 
@@ -138,41 +126,6 @@
   <!-- /portfolio -->
   {{ end }}
 
-
-  {{ if .Site.Data.homepage.testimonial.enable }}
-  <!-- testimonial -->
-  <section class="section bg-primary position-relative testimonial-bg-shapes">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title text-white mb-5">Testimonials</h2>
-        </div>
-        <div class="col-lg-10 mx-auto testimonial-slider">
-          {{ range .Site.Data.homepage.testimonial.item }}
-          <!-- slider-item -->
-          <div class="text-center testimonial-content">
-            <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-            <p class="text-white mb-4">{{.content | markdownify}}</p>
-            <img class="img-fluid rounded-circle mb-4 d-inline-block" src="{{.image | absURL }}" alt="client-image">
-            <h4 class="text-white">{{.name }}</h4>
-            <h6 class="text-light mb-4">{{ .designation }}</h6>
-          </div>
-          {{ end }}
-        </div>
-      </div>
-    </div>
-    <!-- bg shapes -->
-    <img src="{{`images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map">
-    <img src="{{`images/illustrations/dots-group-v.png` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-1">
-    <img src="{{`images/illustrations/leaf-orange.png` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-2">
-    <img src="{{`images/illustrations/dots-group-sm.png` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-3">
-    <img src="{{`images/illustrations/leaf-pink-round.png` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-4">
-    <img src="{{`images/illustrations/leaf-cyan.png` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-5">
-  </section>
-  <!-- /testimonial -->
-  {{ end }}
-
-
   {{ if .Site.Data.homepage.clientSlider.enable }}
   <!-- client logo slider -->
   <section class="section pb-0">
@@ -182,33 +135,5 @@
   </section>
   <!-- /client logo slider -->
   {{ end }}
-
-  {{ if .Site.Data.homepage.blog.enable }}
-  <!-- blog -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">Blogs</h2>
-        </div>
-        {{ range first 3 .Data.Pages }}
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="{{.Params.Image | absURL}}" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
-              </h4>
-              <p class="cars-text">{{.Summary}}</p>
-              <a href="{{.Permalink}}" class="btn btn-xs btn-primary">Read More</a>
-            </div>
-          </article>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  <!-- /blog -->
-  {{ end }}
-
 
 {{ end }}

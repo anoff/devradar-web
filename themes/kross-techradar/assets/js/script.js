@@ -44,8 +44,8 @@
 
         var parallaxBox = document.getElementById('parallax');
         var
-            /* c1left = document.getElementById('l1').offsetLeft,
-            c1top = document.getElementById('l1').offsetTop, */
+            c1left = document.getElementById('l1').offsetLeft,
+            c1top = document.getElementById('l1').offsetTop,
             c2left = document.getElementById('l2').offsetLeft,
             c2top = document.getElementById('l2').offsetTop,
             c3left = document.getElementById('l3').offsetLeft,
@@ -68,7 +68,7 @@
             var x = event.clientX - parallaxBox.offsetLeft,
                 y = event.clientY - parallaxBox.offsetTop;
 
-            /*  mouseParallax('l1', c1left, c1top, x, y, 5); */
+            mouseParallax('l1', c1left, c1top, x, y, 25);
             mouseParallax('l2', c2left, c2top, x, y, 25);
             mouseParallax('l3', c3left, c3top, x, y, 20);
             mouseParallax('l4', c4left, c4top, x, y, 35);
