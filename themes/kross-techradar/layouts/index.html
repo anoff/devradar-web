@@ -68,43 +68,17 @@
   {{ end }}
 
 
-  {{ if .Site.Data.homepage.features.enable }}
-  <!-- features -->
+  {{ if .Site.Data.homepage.usecases.enable }}
+  <!-- usecases -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">Features</h2>
-        </div>
-        {{ range .Site.Data.homepage.service.item }}
-        <div class="col-md-4 mb-4">
-          <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
-            <div class="card-body text-center px-4 py-5">
-              <i class="{{.icon }} icon mb-5 d-inline-block"></i>
-              <h4 class="mb-4">{{.title}}</h4>
-              <p>{{.content | markdownify}}</p>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  <!-- /features -->
-  {{ end }}
-
-
-  {{ if .Site.Data.homepage.portfolio.enable }}
-  <!-- portfolio -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">Portfolio</h2>
+          <h2 class="section-title">Use cases</h2>
         </div>
       </div>
       <div class="row shuffle-wrapper">
-        {{ range .Site.Data.homepage.portfolio.item }}
+        {{ range .Site.Data.homepage.usecases.item }}
         <div class="col-lg-4 col-6 mb-4 shuffle-item">
           <div class="position-relative rounded hover-wrapper">
             <img src="{{.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
@@ -122,14 +96,31 @@
   <!-- /portfolio -->
   {{ end }}
 
-  {{ if .Site.Data.homepage.clientSlider.enable }}
-  <!-- client logo slider -->
-  <section class="section pb-0">
+  {{ if .Site.Data.homepage.setup.enable }}
+  <!-- features -->
+  <section class="section">
     <div class="container">
-      {{ partial "client-slider.html" . }}
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">Setup options</h2>
+        </div>
+        {{ range .Site.Data.homepage.setup.item }}
+        <div class="col-md-4 mb-4">
+          <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
+            <div class="card-body text-center px-4 py-5">
+              <i class="{{.icon }} icon mb-5 d-inline-block"></i>
+              <h4 class="mb-4">{{.title}}</h4>
+              <p>{{.content | markdownify}}</p>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
     </div>
   </section>
-  <!-- /client logo slider -->
+  <!-- /features -->
   {{ end }}
+
+
 
 {{ end }}
