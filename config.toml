@@ -24,16 +24,12 @@ summaryLength = "10"
   URL = "plugins/slick/slick.min.js"
   [[params.plugins.js]]
   URL = "plugins/shuffle/shuffle.min.js"
-
-
   
 # navigation
-[menu]
-    
-  [[menu.main]]
-  name = "Code"
-  URL = "github"
-  weight = 2
+[params.nav]
+  [[params.nav.link]]
+  URL = "//github.com/anoff/techradar"
+  Name = "Code"
 
 [params]
 logo = "images/devradar-b.png"

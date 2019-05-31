@@ -142,7 +142,3 @@ clientSlider:
       
     - logo : "images/clients-logo/client-logo-5.png"
       URL : "#"
-
-# blog
-blog:
-  enable : true

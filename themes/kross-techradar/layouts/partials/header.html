@@ -11,24 +11,12 @@
         <li class="nav-item active">
           <a class="nav-link text-dark" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
         </li>
-        {{ range .Site.Menus.main }}
-        {{ if .HasChildren }}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            {{ .Name }}
-          </a>
-          <div class="dropdown-menu" >
-            {{ range .Children }}
-            <a class="dropdown-item text-dark" href="{{ .URL | absURL }}">{{ .Name }}</a>
-            {{ end }}
-          </div>
-        </li>
-        {{ else }}
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="{{ .URL | absURL }}">{{ .Name }}</a>
-        </li>
-        {{ end }}
+        {{ with .Site.Params.nav }}
+          {{ range .link }}
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="{{ .URL }}" target="_blank">{{ .Name }}</a>
+            </li>
+          {{ end }}
         {{ end }}
       </ul>
     </div>

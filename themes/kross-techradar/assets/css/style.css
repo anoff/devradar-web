@@ -456,7 +456,8 @@ textarea.form-control {
 
 .hero-area h1 {
   position: relative;
-  z-index: 2
+  z-index: 2;
+  left: -15%;
 }
 
 .layer {
@@ -513,6 +514,10 @@ textarea.form-control {
   position: absolute;
   bottom: 0;
   left: 0
+}
+
+.layer img {
+  filter: invert(1);
 }
 
 #radar-trans {
