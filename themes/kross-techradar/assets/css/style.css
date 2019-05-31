@@ -3,8 +3,6 @@
 PROJECT: Project Name
 VERSION: Versoin Number
 -------------------------------------------------------------------*/
-@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
-
 @font-face {
   font-family: bwnistaint-xbd;
   src: url(../fonts/BwNistaInt-xBd.woff) format("woff");
@@ -35,7 +33,6 @@ h4,
 h5,
 h6 {
   color: #000;
-  font-family: playfair display, serif;
   line-height: 1.2
 }
 
@@ -87,7 +84,6 @@ h6,
 
 .btn {
   font-size: 22px;
-  font-family: playfair display, serif;
   text-transform: capitalize;
   padding: 16px 44px;
   border-radius: 5px;
@@ -181,10 +177,36 @@ img {
   border: 0
 }
 
-a,
-a:hover,
-a:focus {
-  text-decoration: none
+a {
+  position: relative;
+  text-decoration: none;
+  color: #0DBD0D;
+}
+
+a:hover {
+  color: #0DBD0D;
+  text-decoration: none;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 a,
@@ -319,10 +341,6 @@ select:focus {
   overflow: hidden
 }
 
-.font-secondary {
-  font-family: playfair display, serif !important
-}
-
 .font-tertiary {
   font-family: bwnistaint-xbd !important
 }
@@ -433,7 +451,6 @@ textarea.form-control {
   text-transform: uppercase;
   padding: 15px
 }
-
 .navbar .nav-item.active {
   font-weight: 700
 }
@@ -694,9 +711,6 @@ textarea.form-control {
   bottom: -50px
 }
 
-.footer-section {
-  padding-top: 50px
-}
 
 .section-on-footer {
   margin-bottom: -250px
@@ -742,7 +756,6 @@ blockquote {
 }
 
 .content strong {
-  font-family: playfair display, serif;
   font-size: 22px;
   font-weight: 400;
   color: #000;
