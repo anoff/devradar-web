@@ -1,8 +1,5 @@
 banner:
   title : "Your personal <br> techradar"
-  socialLinks:
-    - icon : "ti-github"
-      URL : "//github.com/anoff/techradar"
 
 about:
   enable : true

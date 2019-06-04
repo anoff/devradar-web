@@ -460,13 +460,20 @@ textarea.form-control {
 }
 
 .hero-area {
-  padding: 250px 0 200px;
+  padding: 15rem 0 10rem;
   position: relative
+}
+
+@media(max-width:1400px) {
+  .hero-area {
+    padding: 10rem 0 10rem;
+    overflow: hidden
+  }
 }
 
 @media(max-width:767px) {
   .hero-area {
-    padding: 200px 0 150px;
+    padding: 5rem 0 10rem;
     overflow: hidden
   }
 }
@@ -474,7 +481,7 @@ textarea.form-control {
 .hero-area h1 {
   position: relative;
   z-index: 2;
-  left: -15%;
+  left: 5%;
 }
 
 .layer {
@@ -542,6 +549,7 @@ textarea.form-control {
   bottom: 0;
   right: 0;
   max-height: 80%;
+  max-width: 60%;
   overflow: hidden;
 }
 .progress-wrapper {

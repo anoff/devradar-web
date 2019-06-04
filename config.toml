@@ -28,8 +28,11 @@ summaryLength = "10"
 # navigation
 [params.nav]
   [[params.nav.link]]
-  URL = "//github.com/anoff/techradar"
-  Name = "Code"
+  URL = "//editor.devradar.io"
+  Name = "Editor"
+  [[params.nav.link]]
+  URL = "//docs.devradar.io"
+  Name = "Docs"
 
 [params]
 logo = "images/devradar-b.png"
@@ -40,13 +43,14 @@ author = "Andreas Offenhaeuser"
 # Google Analitycs
 googleAnalitycsID = "Your ID"
 
+  # github (fork) corner
+  [params.github]
+  enable = true
+  URL = "//github.com/anoff/devradar"
+
   # Preloader
   [params.preloader]
   enable = true
-
-  [params.contact]
-  enable = false
-  formAction = "#" #contact form works with formspree.io
 
   [params.footer]
   email = "steve.fruits@email.com"
