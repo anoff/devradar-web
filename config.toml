@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313"
 languageCode = "en-us"
-title = "devradar | your personal techradar"
+title = "devradar.io | your personal techradar"
 theme = "kross-techradar"
 summaryLength = "10"
 

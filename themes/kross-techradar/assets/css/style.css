@@ -424,24 +424,25 @@ textarea.form-control {
 }
 
 .navigation {
-  padding: 40px 130px;
+  padding: 2rem 130px;
   transition: .3s ease
 }
 
 .navigation.nav-bg {
   background-color: #0DDD0D;
-  padding: 15px 100px
+  padding: 0px 100px;
+  height: 4rem;
 }
 
 @media(max-width:991px) {
   .navigation.nav-bg {
-    padding: 15px 20px
+    padding: 0px 20px
   }
 }
 
 @media(max-width:991px) {
   .navigation {
-    padding: 20px;
+    padding: 5px;
     background: #0DDD0D
   }
 }
@@ -891,4 +892,8 @@ blockquote {
 
 .filter-controls li.active {
   font-weight: 700
+}
+
+.navbar-brand img {
+  width: 140px;
 }
