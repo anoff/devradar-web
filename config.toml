@@ -1,7 +1,7 @@
 baseURL = "http://localhost:1313"
 languageCode = "en-us"
 title = "devradar.io | your personal techradar"
-theme = "kross-techradar"
+theme = "anoff-project-gen"
 summaryLength = "10"
 
 # Plugins

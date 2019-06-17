@@ -118,7 +118,7 @@ a:before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #333;
+  background-color:  #0DDD0D;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -193,9 +193,12 @@ select:focus {
 }
 
 .text-dark {
-  color: #000 !important
-}
+  color: #000 !important;
 
+}
+a.text-dark:before {
+  background-color: #000 !important;
+}
 .text-light {
   color: #999 !important
 }
@@ -209,7 +212,7 @@ select:focus {
 }
 
 .bg-dark {
-  background-color: #222 !important
+  background-color: #222 !important;
 }
 
 .icon {
@@ -283,7 +286,9 @@ textarea.form-control {
   transition: .3s ease
 }
 
-.navigation.nav-bg {
+header.navigation.nav-bg {
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+  -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
   background-color: #0DDD0D;
   padding: 0px 100px;
   height: 4rem;
@@ -431,10 +436,6 @@ textarea.form-control {
   background: #0DDD0D
 }
 
-.active-bg-primary * {
-  color: #111
-}
-
 .hover-shadow {
   transition: .2s ease
 }
@@ -514,4 +515,15 @@ blockquote {
 
 .navbar {
   padding-right: 80px;
+}
+
+footer.bg {
+  font-size: 0.9em;
+  a {
+    color: #999;
+    text-decoration: underline;
+  }
+  a:before {
+    content: none;
+  }
 }

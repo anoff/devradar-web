@@ -1,14 +1,12 @@
 <!-- footer -->
-<footer class="bg-dark">
+<footer class="bg">
   <div class="text-center py-4">
     <span class="mr-3 ml-3 text-light">Made with 💖 by <a href="//anoff.io">Andreas Offenhaeuser</a></span>
     <span class="mr-3 ml-3 text-light"><a href="//anoff.github.io/legal">Legal</a></span>
   </div>
 </footer>
 <!-- /footer -->
-  
-{{ "<!-- Google Map API -->" | safeHTML }}
-<script src="{{ .Site.Params.gmapAPI | absURL }}"></script>
+
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ range .Site.Params.plugins.js}}
 <script src="{{ .URL | absURL }}"></script>

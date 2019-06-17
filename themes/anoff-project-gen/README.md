@@ -1,4 +1,6 @@
-= kross-techradar Hugo Theme
+= anoff-project-gen Hugo theme
+
+A theme for project landing pages.
 
 > Built on top of [kross-hugo-portfolio-template](https://github.com/themefisher/kross-hugo-portfolio-template)
 

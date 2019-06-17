@@ -3,24 +3,30 @@ banner:
 
 about:
   enable : true
-  content : "Create your own techradar for personal or team use. Host it locally, with a serverless backend or just use the client-only web app."
+  content : "Create a detailed overview of your skills or a classical techradar for your team with our web based editor.
+    Download your devradar and take it with you in an exchangeable format."
 
-setup:
+tiles:
   enable : true
+  title: Setup options
   item : 
     - title : "Serverless"
       icon : "ti-server"
       content : "Host your own instance on Google Firebase with integrated authentication, user management and web-based blip editing."
+      URL: https://github.com/anoff/devradar/blob/master/setup.md#firebase-backend
+      URLtitle: Setup Guide
       highlighted : false
 
-    - title : "Web App"
+    - title : "Editor App"
       icon : "ti-cloud"
-      content : "View and edit your devradar on our client-only web application. Use the one we offer or host your own."
+      content : "View and edit your devradar on our client-only web application. No data is sent to the server, everything stays on your device. You can download your devradar as TOML file."
+      URL: //editor.devradar.io
+      URLtitle: Open editor
       highlighted : true
 
-    - title : "Local storage"
+    - title : "Docker Server"
       icon : "ti-file"
-      content : "Want to control the devradar blips yourself? Run our local storage version to serve the latest version of your blips."
+      content : "Run devradar in a Docker container to let others browse your skills. Requires a TOML file created via the editor web app."
       highlighted : false
 
 usecases:
@@ -40,22 +46,3 @@ usecases:
       
     - image : "images/portfolio/item-5.png"
       projectURL : "#"
-
-# testimonial
-testimonial:
-  enable : false
-  item:
-    - name : "Jesica Gomez"
-      image : "images/testimonial/client-1.png"
-      designation : "CEO, Funder"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      
-    - name : "Shirley Scot"
-      image : "images/testimonial/client-1.png"
-      designation : "CEO, Funder"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      
-    - name : "Jessica Julie"
-      image : "images/testimonial/client-1.png"
-      designation : "CEO, Funder"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."

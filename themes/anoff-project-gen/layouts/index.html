@@ -89,21 +89,24 @@
   <!-- /portfolio -->
   {{ end }}
 
-  {{ if .Site.Data.homepage.setup.enable }}
+  {{ if .Site.Data.homepage.tiles.enable }}
   <!-- features -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">Setup options</h2>
+          <h2 class="section-title">{{ .Site.Data.homepage.tiles.title }}</h2>
         </div>
-        {{ range .Site.Data.homepage.setup.item }}
+        {{ range .Site.Data.homepage.tiles.item }}
         <div class="col-md-4 mb-4">
           <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
             <div class="card-body text-center px-4 py-5">
               <i class="{{.icon }} icon mb-5 d-inline-block"></i>
               <h4 class="mb-4">{{.title}}</h4>
               <p>{{.content | markdownify}}</p>
+              {{ if .URL }}
+              <a role="button" class="btn btn-dark" href="{{ .URL | absURL }}">{{ if .URLtitle }} {{ .URLtitle }} {{ else }} Learn More {{ end }}</a>
+              {{ end }}
             </div>
           </div>
         </div>
