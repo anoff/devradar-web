@@ -46,3 +46,7 @@ usecases:
       
     - image : "images/portfolio/item-5.png"
       projectURL : "#"
+
+features:
+  enable: true
+  title: Features
