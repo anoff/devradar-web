@@ -32,20 +32,21 @@ tiles:
 usecases:
   enable : true
   item:
-    - image : "images/portfolio/item-1.png"
-      projectURL : "#"
+    - image : "images/interview.jpg"
+      URL : "https://editor.devradar.io/#/?load=N4IgtgpgLghiBcooEsoBsIJAWQPYCcoBPAZwAIAHCfE3AOxjQD8z8YATGfEAGhAGMYUCAHMCyCCQQBtEABVcuNFL5yI-ABZ1kARwCuk3iAAKaIQDMCYFSABibSAHcCAaykBdPiVjCp8WQByuABuyPyYfACSdML4kOzIQhEgAILswTB04exGAGrQ1JkgniAMkFhB9JgAvnwARmjIFH7SoILCYvhEWApKNsh07BAAHggADHwo6JjwIADiqAAyMHVkAMKRRpqZIob+oJzCWABMYwCMABwAtGMA7EZ0EI4Ayj4zIPmxRXwDQ6PwY2qJW8SSwn0KdBAtTaSU63Vm9hgTlcNkadBcWAA9Ji6LghgArEgAOgIIiMvxGCDOfCGJH4+CaKHoWAAUjAMnSGRQoGQBmQoBoIGQ6jB+C4IIMAPxkQB8G4B6XaMUwwFTxECJhK2Gh2e1aIEO71Olxu9z4jxebywaQyWQgOUmIygWDAuC4ZFw5n5GmQ-UGlIB0L1oNmhoALFczscHk9XkGQEFQuFFQ6sOZkDQeVAuuTff8zkCvBbZlbMtkoTwYR0CPC7A4nijs38EMdJqhlbM5rhNdqWgdY4brhGo+bY-GwslhMNHbNnnoqPhzDBvDwyPTcCQSFd+LgwBRkBh2MuwHo0CgrhQzFBLHEyCN1HpYA1DD8c+N8yAQUdZqPEwH2qIq1gpgWFYqIDBiszYi4eh1NQjy+ESyCds+jbwAAzDSkj0oyiGQrMaz0LAAzUOQQhkHSjDjq27wANLQbBBQ2NsdC7D2gafiA-bGkOMbsd+yQUv8gLAoWcYhGOZYVv+WazEBl4gUYaLgSA2LsLgYrUAhSEgAJCAhhhnLYcyeEETARH4GQjBoJ6QoCgMIg2Eq7wACJqeK3B8ExLEyL27GGgAnDcqHcSJxY2na2kvv6wmxqFpa-rCAGzGomjaPoT4RShACs+lYdyOE9PgECkUQuB6OZqn8HokAxEIOFkI04pkCVej8oVpFbkMy4iKgZDBMROHLsYABKrAQKETzLtA-BEoqVFYBVJHkB1ySeTqPkGucAVjEFprRiF6QlraSaTlgkQWWAZG4GQYh4hZGZeuQMGCHoJBCmdL1Cj1Y3UEQjiCoVACEDZ+kJBYxQdYVQu41RAA"
+      title: Visualize your tech proficiency
+      text: "Create a devradar with skill proficiency scale.
+      Our editor helps you keeping track of how you advance your skills for individual tools.<br><br>
+      Export a static image or leverage the interactive server mode to present your skill set.
+      "
       
-    - image : "images/portfolio/item-2.png"
-      projectURL : "#"
-      
-    - image : "images/portfolio/item-3.png"
-      projectURL : "#"
-      
-    - image : "images/portfolio/item-4.png"
-      projectURL : "#"
-      
-    - image : "images/portfolio/item-5.png"
-      projectURL : "#"
+    - image : "images/team.jpg"
+      URL : "https://editor.devradar.io/#/?load=N4IgtgpgLghiBcooEsoBsIJAcTTAxivgAQBiEAJhAE4woD2AdsQCoT4AWj9a9A5gE9iAZVj4A1iAA0IfHQh961ZBADOCANogW9HupltOjZAEcArmukgACnigAzJWH0hStSAHcl49QF0ZqrBQlvBaABI8FFYAgqqqai4syjBoMRT0AA5QIP4gjDCQWAByuoyYAL4yAEZoyBnqoaBywYrUAlg6elbIjFQAHggADDIo6JjwOKgAMjBVxADCAJJWnDCMfCEaoBTyWABMgwCMABwAtIMA7FZlHqK7E9HpWd29EAPwg+W5gfcgj5nZSpNeStdoTNwFCBeag+Ky1RiSCYAeiR3CoACtVAA6JR8F79BCHGRUVT4ZRZZBMLAAKRgADcYKTyVBiD1iFAOBBiFUCOIIL0APzEQB8G4B6XasowwxXoVCxmJWHDWGwaWxAO2C+yOZ0u1yhdw1Dye2RGb2yEzAMCorJZPSg9HZnOI+HoYDATHZujQPwk+LeQyBat+B0OABZToc9rrbkFxtpkqkTX0zSBgoFrcQPKgOA7kKpiDdubz+VEZD0CfBDl8AjGsP9ngHmgolGCbHZHNRnHCeoiQCjxGYqjQyqmsZTfe89sS1GS6gxGFh5kxYD0aHm6MRSSlMCNUFKJgBpAdD6CWGSrdabbZBrXnK4yG762N140p01YK32Ah2jewXowagUMQ7bECkaDEPQZjUE6S4wCuUFKJwahQLQc75hAlAuGWfofFWIA-AafxGiADYgs2WC2HQ7adjI8I9ii6QSDQo70OOCAAMxTkys6UvOEyLowy5lFBoEOlyHI9HwLiSrGAAi9CMdQCpKpegYEcGACc5xsVGj61kRpavO8nzfDWhoAsRUjAi0ZETIYXCmBYmGGQgIacTOFJUrZ1AQOuAgQVBDFmJAAl0DxxC1HyxB+WY7LeeuzpUFIxB8KgxB0quPFJdYABKxDeXSKgeEl0D4FiEq7rGDFrnmCXbrIioXiqV5qUcmmDNp956qZcbICkEpvrZHC5hu6HOOFyCRTAyW6IByBUDASUeFyqgcBBaCAekxBut54H2NarE4SZvxJL1qRfOUQA"
+      title: Manage team competences
+      text: "Use classic techradar adoption levels (<i>hold, assess, trial, adopt</i>) in a devradar for your team or organization.
+      Keep track of new technologies emerging within your team.<br><br>
+      Plan and document technology adoption over time.
+      "
 
 features:
   enable: true

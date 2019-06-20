@@ -22,17 +22,20 @@ summaryLength = "10"
   URL = "plugins/bootstrap/bootstrap.min.js"
   [[params.plugins.js]]
   URL = "plugins/slick/slick.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/shuffle/shuffle.min.js"
   
 # navigation
 [params.nav]
   [[params.nav.link]]
+  URL = "/howto"
+  Name = "How To"
+  [[params.nav.link]]
   URL = "//editor.devradar.io"
   Name = "Editor"
-  [[params.nav.link]]
-  URL = "//docs.devradar.io"
-  Name = "Docs"
+  NewTab = true
+  # [[params.nav.link]]
+  # URL = "//docs.devradar.io"
+  # Name = "Docs"
+  # NewTab = true
 
 [params]
 logo = "images/devradar-b.png"

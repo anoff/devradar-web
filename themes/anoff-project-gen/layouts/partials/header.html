@@ -7,16 +7,15 @@
     aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  <a class="navbar-brand" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="{{.Site.Title}}"></a>
+  <a class="navbar-brand text-dark" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="{{.Site.Title}}"></a>
     <div class="collapse navbar-collapse text-center" id="navigation">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link text-dark" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
-        </li>
         {{ with .Site.Params.nav }}
           {{ range .link }}
             <li class="nav-item">
-              <a class="nav-link text-dark" href="{{ .URL }}" target="_blank">{{ .Name }}</a>
+              <a class="nav-link text-dark" href="{{ .URL }}" {{ if eq .NewTab true }} target="_blank" {{ end }}>{{ .Name }}
+                {{ if eq .NewTab true }}<i class="ti-new-window"></i> {{ end }}
+              </a>
             </li>
           {{ end }}
         {{ end }}
