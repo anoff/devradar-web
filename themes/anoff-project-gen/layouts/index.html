@@ -109,7 +109,7 @@
         </div>
       </div>
       {{ range where .Site.RegularPages "Type" "feature" }}
-        {{ partial "content-type/feature" . }}
+        {{ partial "content-type/card" . }}
       {{ end }}
     </div>
   </section>

@@ -1,6 +1,7 @@
 @import './responsive.scss';
 @import './variables.scss';
 @import './common.scss';
+@import './howto.scss';
 
 @font-face {
   font-family: bwnistaint-xbd;
@@ -264,7 +265,7 @@ textarea.form-control {
 }
 
 .card {
-  border: 0
+  border: 0;
 }
 
 .card-header {
@@ -542,4 +543,9 @@ footer.bg {
   a:before {
     content: none;
   }
+}
+
+.toc-anchor {
+  position: relative;
+  top: -70px;
 }
