@@ -1,10 +1,18 @@
 banner:
-  title : "Your personal <br> techradar"
+  title : "Skill management<br>for developers"
 
 about:
   enable : true
-  content : "Create a detailed overview of your skills or a classical techradar for your team with our web based editor.
-    Download your devradar and take it with you in an exchangeable format."
+  content : "Document and present skills for individuals and teams. The devradar editor allows you to:"
+  item:
+    - text: "create your own _techradar_"
+    - text: "customize adoption levels"
+    - text: "define quadrant categories"
+    - text: "create radar blips via GUI"
+    - text: "view all skills in a list"
+    - text: "search for specific skills"
+    - text: "import/export via `.toml` files"
+    - text: "share your devradar via URL"
 
 tiles:
   enable : true
