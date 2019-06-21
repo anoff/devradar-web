@@ -6,19 +6,19 @@ steps:
 - name: build
   image: anoff/hugo-asciidoctor
   commands:
-  - hugo --gc --minify -d _site --baseURL https://devradar.io.io
+  - hugo --gc --minify -d _site --baseURL //devradar.io
   - touch _site/.nojekyll
 
 - name: netlify deploy
-  image: lucap/drone-netlify
+  image: node:lts-alpine
   environment:
-    NETLIFY_ID:
+    NETLIFY_SITE_ID:
       from_secret: NETLIFY_ID
-  token:
-    from_secret: NETLIFY_TOKEN
-  site_id: $NETLIFY_ID
-  domain: devradar.io
-  path: _site/
-  when:
-    branch:
-    - master
+    NETLIFY_AUTH_TOKEN:
+      from_secret: NETLIFY_TOKEN
+  commands:
+    - npm install -g netlify-cli
+    - netlify deploy --dir=_site --prod
+  # when:
+  #   branch:
+  #   - master
