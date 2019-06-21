@@ -278,7 +278,10 @@ textarea.form-control {
 
 .navigation {
   padding: 2rem 130px;
-  transition: .3s ease
+  transition: .3s ease;
+  @include smaller($breakpoint-xs) {
+    padding: 0px 20px;
+  }
 }
 
 header.navigation.nav-bg {
@@ -307,7 +310,6 @@ header.navigation.nav-bg {
 
 .hero-area {
   padding: 15rem 0 10rem;
-  
   position: relative
 }
 
@@ -328,6 +330,8 @@ header.navigation.nav-bg {
 .hero-area h1 {
   position: relative;
   font-size: 4rem;
+  @include smaller($breakpoint-sm) { font-size: 3rem; }
+  @include smaller($breakpoint-xs) { font-size: 2rem; }
   z-index: 2;
   left: 5%;
 }

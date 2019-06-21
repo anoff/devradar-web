@@ -44,8 +44,9 @@ summaryLength = "10"
 logo = "images/devradar-b.png"
 home = "Home"
 # Meta data
-description = "Your personal techradar"
+description = "Skill management for individuals and teams"
 author = "Andreas Offenhaeuser"
+
 # Google Analitycs
 googleAnalitycsID = "Your ID"
 
