@@ -286,20 +286,10 @@ header.navigation.nav-bg {
   -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
   background-color: #0DDD0D;
   padding: 0px 100px;
+  @include smaller($breakpoint-xs) {
+    padding: 0px 20px;
+  }
   height: 4rem;
-}
-
-@media(max-width:991px) {
-  .navigation.nav-bg {
-    padding: 0px 20px
-  }
-}
-
-@media(max-width:991px) {
-  .navigation {
-    padding: 5px;
-    background: #0DDD0D
-  }
 }
 
 .navbar .nav-item .nav-link {
@@ -487,6 +477,7 @@ header.navigation.nav-bg {
   position: absolute;
   width: 100%;
   bottom: 0;
+  @include smaller($breakpoint-xs) { font-size: 1.5rem; }
 }
 .hover-content {
   position: absolute;

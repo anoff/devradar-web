@@ -13,6 +13,7 @@ about:
     - text: "search for specific skills"
     - text: "import/export via `.toml` files"
     - text: "share your devradar via URL"
+  video: "/videos/view.webm"
 
 tiles:
   enable : true
@@ -41,7 +42,7 @@ usecases:
   enable : true
   item:
     - image : "images/interview.jpg"
-      URL : "https://editor.devradar.io/#/?load=N4IgtgpgLghiBcooEsoBsIJAWQPYCcoBPAZwAIAHCfE3AOxjQD8z8YATGfEAGhAGMYUCAHMCyCCQQBtEABVcuNFL5yI-ABZ1kARwCuk3iAAKaIQDMCYFSABibSAHcCAaykBdPiVjCp8WQByuABuyPyYfACSdML4kOzIQhEgAILswTB04exGAGrQ1JkgniAMkFhB9JgAvnwARmjIFH7SoILCYvhEWApKNsh07BAAHggADHwo6JjwIADiqAAyMHVkAMKRRpqZIob+oJzCWABMYwCMABwAtGMA7EZ0EI4Ayj4zIPmxRXwDQ6PwY2qJW8SSwn0KdBAtTaSU63Vm9hgTlcNkadBcWAA9Ji6LghgArEgAOgIIiMvxGCDOfCGJH4+CaKHoWAAUjAMnSGRQoGQBmQoBoIGQ6jB+C4IIMAPxkQB8G4B6XaMUwwFTxECJhK2Gh2e1aIEO71Olxu9z4jxebywaQyWQgOUmIygWDAuC4ZFw5n5GmQ-UGlIB0L1oNmhoALFczscHk9XkGQEFQuFFQ6sOZkDQeVAuuTff8zkCvBbZlbMtkoTwYR0CPC7A4nijs38EMdJqhlbM5rhNdqWgdY4brhGo+bY-GwslhMNHbNnnoqPhzDBvDwyPTcCQSFd+LgwBRkBh2MuwHo0CgrhQzFBLHEyCN1HpYA1DD8c+N8yAQUdZqPEwH2qIq1gpgWFYqIDBiszYi4eh1NQjy+ESyCds+jbwAAzDSkj0oyiGQrMaz0LAAzUOQQhkHSjDjq27wANLQbBBQ2NsdC7D2gafiA-bGkOMbsd+yQUv8gLAoWcYhGOZYVv+WazEBl4gUYaLgSA2LsLgYrUAhSEgAJCAhhhnLYcyeEETARH4GQjBoJ6QoCgMIg2Eq7wACJqeK3B8ExLEyL27GGgAnDcqHcSJxY2na2kvv6wmxqFpa-rCAGzGomjaPoT4RShACs+lYdyOE9PgECkUQuB6OZqn8HokAxEIOFkI04pkCVej8oVpFbkMy4iKgZDBMROHLsYABKrAQKETzLtA-BEoqVFYBVJHkB1ySeTqPkGucAVjEFprRiF6QlraSaTlgkQWWAZG4GQYh4hZGZeuQMGCHoJBCmdL1Cj1Y3UEQjiCoVACEDZ+kJBYxQdYVQu41RAA"
+      URL : "https://editor.devradar.io/#/?load=N4IgtgpgLghiBcooEsoBsIJAWQPYCcoBPAZwAIAHCfE3AOxjQD8z8YATGfEAGhAGMYUCAHMCyCCQQBtEABVcuNFL5yI-ABZ1kARwCuk3iAAKaIQDMCYFSABibSAHcCAaykBdPiVjCp8WQByuABuyPyYfACSdML4kOzIQhEgAILswTB04exGAGrQ1Jkg7gC+fABGaMgUftKggsJi+ERYCko2yHTsEAAeCAAMfCjomPAgAOKoADIw5WQAwpFGmpkihv6gnMJYAEz9AIwAHAC0-QDsRnQQjgDKPqMg+bFFfJ3dffD9JZ4g3klYT0KdBAZXqSSaLTG9hgTlcNiqdBcWAA9Mi6LhugArEgAOgIIiMb16CH2fG6JH4+GqKHoWAAUjAMhSqRQoGROmQoBoIGRyjB+C4IF0APxkQB8G4B6XaMwwwWCC3Rx2OWGlW6zqIC2Dz2R1OFz4V1u9ywaQyWQgOSGvSgWDAuC4ZFw5k5GmQHS6xM+oI1-zG2oALMd9jtLtc7j6QEFQuFpVasOZkDQ2VBmoT3R99t8vEaxibMtkQTwwY0CJC7A5rnDU+8EDshqhZWNxrhlaraptw9qTkGQ4bw5GwslhD1rWMbnoqPhzDBvDwyJTcCQSMd+LgwBRkBh2LOwHo0ChjhQzFBLHEyL11HpYJVDK80wNM79sxGQgOC0XRCWsKYLFZ4Z0kWMqIuHo5TUFcvg4sgza3tW8AAMxkpIlLUlBwJjPM9CwJ01DkEIZAUowg71g8ADSIFgQUNgrHQaxtt62y+gcJznD2YYMc+UbJESHxfD8fzsf20Zeg0H4pmM37Hr+RgIgBICouwuACtQkHQSA3EIH6iHMihtLoZhMDYfgZCMGgzo8lynQiDYMoPAAIopgrcHw1G0TI7bsdqACcpxwaxT65maFpqXenp8f56R5uab4COCn5jGomjaPoN7BbBACsWnIayqGtPgEB4UQuB6EZCn8HokAxEIqFkFUgpkIVeicnleErt0s4iKgZDBDhqGzsYABKrAQKE1yztA-A4tKxFYKVuHkK1yQuWq7lagc3n9L5+qhuFpr5paw5YJExlgPhuBkGIGLGUmLrkKBgh6CQPJHQ9PKdcN1BEI43J5QAhFWHq8Vm4YBfm3wlEAA"
       title: Visualize your tech proficiency
       text: "Create a devradar with skill proficiency scale.
       Our editor helps you keeping track of how you advance your skills for individual tools.<br><br>
@@ -51,8 +52,8 @@ usecases:
     - image : "images/team.jpg"
       URL : "https://editor.devradar.io/#/?load=N4IgtgpgLghiBcooEsoBsIJAcRmmAxigQAQBiEAJhAE4woD2AdiQCoQEAWTDaDA5gE8SAZVgEA1iAA0IAvQj8GNZBADOCANohWDXhtnsuTZAEcArupkgACvigAzZWAMgydSAHdlEjQF1ZNVgoK3htAAleSmsAQTU1dVdWFTxYygYABygQAJAmGEgsADk9JkwAX1kAIzRkDI0w0HkQpRpBLF19a2QmagAPBAAGWRR0THgcVAAZGCqSAGEASWsuGCZ+UM1QSgUsACZBgEYADgBaQYB2azLPMV2JmPSs7t6IAfhB8tyg+5BHzOylSaCla7Qm7gKEG8NF81lqTCkEwA9EieNQAFZqAB0yn4L36CEOsmoagIKiyyGYWAAUjAAG4wUnkqAkHokKCcCAkKqECQQXoAfhIgD4NwD0u9ZRhhigxqFjMStOGsNg0tiAdiF9kczpdrlC7hqHk9siM3tkJmAYNRWSyelAGOzOSQCAwwGBmOy9GgfpJ8W8hkC1b8DocACynQ57XW3YLjHQpNAS01YEJBa0kTyoTgO5BqEg3bm8-nRWQ9AnwQ5fQIxrD-Z4B5qKZRg2z2Jw0FxwnqIkAoiTmKq0MoprGU33vPbE9RkuqMJhYebMWA9Wi5+gkUl4TAjVBSiYAaX7g+gVlkq3Wm22Qa15yushu+tjteNIBCfTNaq5DkIdvXsF6MBoSgSDbEg8DQEgGHMGgnUXGBl2g5QuHUKA6FnPMICoVxSz9D5KxAH4DT+I0QHrEEmywOx6DbDtZHhbsUXSSRaBHBgxwQABmScmRnSk5wmBcmCXMpoLAh0uQ5Hp+FcSVYwAEQYJiaAVJUL0DQjgwATnOdiowfGtiJLV53k+b5q0NAESOkYEWnIiYjG4MxLCwoyEBDLjpwpKk7JoCA10ESDoMY8xIEE+heJIWo+RIfzzHZHy12dahpBIfhUBIOkV145KbAAJRIHy6VUTxkugAgsQlHdY0Y1dc0Src5EVc8VUvdSji0wYdLvPUzLjZBUhNN8Ok4HN1wwlwIuQKKYBSvQgOQagYGSzwuTUThILQID0hIN0fIghxrTY3DTN+ZI+oTL5yiAA"
       title: Manage team competences
-      text: "Use classic techradar adoption levels (<i>hold, assess, trial, adopt</i>) in a devradar for your team or organization.
-      Keep track of new technologies emerging within your team.<br><br>
+      text: "Use devradar to track adoption of skills and technologies (<i>hold, assess, trial, adopt</i>) within your team or organization.
+      Identify emerging technologies and guide innovation.<br><br>
       Plan and document technology adoption over time.
       "
 
