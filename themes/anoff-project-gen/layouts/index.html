@@ -60,9 +60,8 @@
             <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.btnText}}</a>
             {{ end }}
             {{ with .video }}
-              <video autoplay width="100%">
-                <source src="{{ . | absURL }}"
-                type="video/webm">
+              <video autoplay loop muted width="100%">
+                <source src="{{ . | absURL }}" type="video/webm">
                 Sorry, your browser doesn't support embedded videos.
               </video>
             {{ end }}

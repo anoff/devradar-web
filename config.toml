@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313"
 languageCode = "en-us"
-title = "devradar.io | your personal techradar"
+title = "devradar.io | manage your skills"
 theme = "anoff-project-gen"
 summaryLength = "10"
 
@@ -25,6 +25,9 @@ summaryLength = "10"
   
 # navigation
 [params.nav]
+  [[params.nav.link]]
+  URL = "/"
+  Name = "Home"
   [[params.nav.link]]
   URL = "/howto"
   Name = "How To"
@@ -54,8 +57,3 @@ googleAnalitycsID = "Your ID"
   # Preloader
   [params.preloader]
   enable = true
-
-  [params.footer]
-  email = "steve.fruits@email.com"
-  phone = "+880 2544 658 256"
-  address = "125/A, CA Commercial Area, California, USA"

@@ -1,5 +1,4 @@
 ---
-type: "howto"
 title: concept
 weight: 1
 ---
