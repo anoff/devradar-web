@@ -1,0 +1,24 @@
+kind: pipeline
+name: publish
+
+steps:
+
+- name: build
+  image: anoff/hugo-asciidoctor
+  commands:
+  - hugo --gc --minify -d _site --baseURL https://devradar.io.io
+  - touch _site/.nojekyll
+
+- name: netlify deploy
+  image: lucap/drone-netlify
+  environment:
+    NETLIFY_ID:
+      from_secret: NETLIFY_ID
+  token:
+    from_secret: NETLIFY_TOKEN
+  site_id: $NETLIFY_ID
+  domain: devradar.io
+  path: _site/
+  when:
+    branch:
+    - master
