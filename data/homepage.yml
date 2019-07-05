@@ -36,6 +36,8 @@ tiles:
     - title : "Docker Server"
       icon : "ti-file"
       content : "Run devradar in a Docker container to let others browse your skills. Requires a TOML file created via the editor web app."
+      URL: https://github.com/anoff/devradar/blob/master/editor/setup.md#run-with-docker
+      URLtitle: Setup Guide
       highlighted : false
 
 usecases:
