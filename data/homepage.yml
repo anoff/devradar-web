@@ -22,7 +22,7 @@ tiles:
     - title : "Serverless"
       icon : "ti-server"
       content : "Host your own instance on Google Firebase with integrated authentication, user management and web-based blip editing."
-      URL: https://github.com/anoff/devradar/blob/master/setup.md#firebase-backend
+      URL: https://github.com/anoff/devradar/blob/master/editor/setup.md#firebase-backend
       URLtitle: Setup Guide
       highlighted : false
 
